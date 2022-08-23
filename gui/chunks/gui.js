@@ -199,7 +199,7 @@ var handleTelemetryModalOptOut = function handleTelemetryModalOptOut() {
 
     vm.runtime.on('PROJECT_LOADED', function () {
       if (!projectLoaded) {
-        var projectFileMatches = window.location.href.match(/[?&]project_url=([^&]*)&?/);
+        var projectFileMatches = window.location.href.match("/scratch-dataviewer/?project_url=/scratch/Exemplo_Dados_temperatura.sb3");
         var projectFile = projectFileMatches ? decodeURIComponent(projectFileMatches[1]) : null;
 
         if (projectFile) {
